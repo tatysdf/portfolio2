@@ -1,0 +1,92 @@
+.parcours{
+    margin-left: 250px;
+    opacity: 0;
+    transform: translateX(-350px);
+    transition: 1s ease-in; 
+    margin-top: 40px;
+    
+    h2{
+        @include title;
+    }
+    
+    h3{
+        @include lil-title;
+    }
+
+    h4{
+        font-family: $font3;
+        font-style: italic;
+        padding-left: 40px;
+        text-shadow: rgb(0, 0, 0);
+
+    }
+
+    ul{
+        margin-top: 15px;
+    }
+
+    p{
+        @include paragraphe;
+    }
+
+
+    i{
+        margin: 0 10px;
+    }
+
+    .btn {
+        @include button;
+        
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+         .stage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    }
+    .stage a{
+
+        width: 50%;
+        @include button;
+        font-size: 1rem;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 0 auto;
+
+     
+    }
+    }
+    @media screen and (max-width: 600px) {
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+         .stage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    }
+        .stage a{
+
+            width: 50%;
+            @include button;
+            font-size: 0.8rem;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 auto;
+
+         
+        }
+    }
+
+   
+    
+}
+ 

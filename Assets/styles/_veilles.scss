@@ -1,0 +1,38 @@
+.veilles{
+    margin-left: 250px;
+    background: linear-gradient(to bottom, #c1d1d4, #ffffff);;
+    h2{
+        @include title;
+        color:  #1F1E31;
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+    h3{
+        @include lil-title;
+        color:  #1F1E31;
+        margin-top: 10px;
+    }
+    p{
+        @include paragraphe;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 900px) {
+        margin-left: 0px;
+       
+
+        li{
+            font-size: 0.9rem;
+        }
+        
+    }
+    @media screen and (max-width: 600px) {
+    
+        p{
+            font-size: 0.9rem;
+        }
+        
+    }
+    
+}

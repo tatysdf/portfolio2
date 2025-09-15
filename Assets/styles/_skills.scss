@@ -1,0 +1,266 @@
+.skills{
+    margin-left: 250px;
+    position: relative;
+    margin-top: 20px;
+
+    @media screen and (max-width: 900px) {
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    h2{
+        @include title;
+        color:  #1F1E31;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    p {
+        @include paragraphe;
+       font-size: 1.2rem;
+       
+    }
+
+    .dev{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+
+        @media screen and (max-width: 1200px) {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+         
+
+        }
+    }
+
+
+    .skill{
+        
+        display: grid;
+        grid-template-rows: 20% 60% 20% ;
+        align-items: center;
+        margin: 20px auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        transition: transform 0.3s ease-in-out;
+      
+        
+        &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+            .progress{
+                opacity: 1;
+                transition: opacity 0.3s ease-in-out;
+
+            }
+            
+       }
+ .skill-img{
+    width: 100%;
+    height: 100%;
+   
+ }
+
+ .skill-img img {
+    width: 70%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+    
+    
+ }
+ @media screen and (max-width: 900px) {
+   width: 150px;
+   height: 150px;
+    
+ }
+ @media screen and (max-width: 600px) {
+   width: 120px;
+   height: 120px;
+    
+ }
+ @media screen and (max-width: 550px) {
+   width: 100px;
+   height: 100px;
+    
+ } 
+ @media screen and (max-width: 450px) {
+    width: 80px;
+    height: 80px;
+    
+ }
+ 
+    }
+    
+ 
+
+
+   
+
+.skill h3 {
+    font-family: $font2;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 1.2rem;
+    color: #1F1E31;
+
+       @media screen and (max-width: 950px) {
+            
+                font-size: 0.9rem;
+             }
+             
+    
+}
+.skill p {
+    @include paragraphe;
+    line-height: normal;
+    font-size: 0.7rem;
+    text-align: center;
+    opacity: 0;
+    
+    
+
+}
+.progress {
+         margin-top: 10px;
+        margin-bottom: 0px;
+        width: 100%;
+        height: 28px;
+        background-color: none;
+        border-radius: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        overflow: hidden;
+        opacity: 0;
+
+        @media screen and (max-width: 950px) {
+            height: 20px;
+            
+        }
+        @media screen and (max-width: 600px) {
+            height: 15px;
+            
+        }
+        @media screen and (max-width: 550px) {
+            height: 10px;
+            
+        }
+        @media screen and (max-width: 450px) {
+            height: 8px;
+            
+        }
+
+    }
+    
+    .progress-bar {
+        background-color: #1f1e31d8;;
+    }
+    
+    
+.tools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 500px) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        
+    }
+
+}
+.tool{
+    display: grid;
+    grid-template-rows: 20% 60% 20% ;
+    align-items: center;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+    transition: transform 0.3s ease-in-out;
+  
+    
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        
+    
+    }
+    
+
+    @media screen and (max-width: 900px) {
+       width: 150px;
+       height: 150px;
+    }
+    @media screen and (max-width: 600px) {
+       width: 120px;
+       height: 120px;
+    }
+    @media screen and (max-width: 550px) {
+       width: 100px;
+       height: 100px;
+    }
+    
+  
+}
+
+.tool img {
+width: 70%;
+height: 70%;
+display: block;
+margin: 0 auto;
+
+@media screen and (max-width: 900px) {
+    width: 60%;
+    height: 60%;
+  
+}
+}
+.tool h3 {
+font-family: $font2;
+text-align: center;
+margin-top: 5px;
+margin-left: 0px;
+font-size: 1.2rem;
+color: #1F1E31;
+@media screen and (max-width: 950px) {
+    font-size: 0.9rem;
+}
+@media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+
+}
+.tool p {
+@include paragraphe;
+line-height: normal;
+font-size: 0.7rem;
+text-align: center;
+opacity: 0;
+
+
+}
+   
+}
