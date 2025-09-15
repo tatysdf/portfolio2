@@ -181,8 +181,12 @@
         .infos ul li a {
             font-size: 1rem;
         }
+        .form  {
+            width: 300px;
+            padding: 5px;
+        }
         .form form input {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         .form form textarea {
             font-size: 1rem;
@@ -192,6 +196,47 @@
         }
         .g-recaptcha{            transform: scale(0.77);
             -webkit-transform: scale(0.77);
+            transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+            margin-bottom: 10px;}
+
+    }
+    @media screen and (max-width:300px){
+        #map {
+            height: 250px;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+        .infos ul li {
+            font-size: 0.9rem;
+        }
+        .infos ul li i {
+            font-size: 1rem;
+        }
+        .infos ul li a {
+            font-size: 0.9rem;
+        }
+        .form  {
+            width: 250px;
+            padding: 5px;
+        }
+        .form form input {
+            font-size: 0.9rem;
+        }
+        .form form textarea {
+            font-size: 0.9rem;
+        }
+        .form form button {
+            font-size: 0.9rem;
+        }
+
+
+        .g-recaptcha{            transform: scale(0.6);
+            -webkit-transform: scale(0.6);
             transform-origin: 0 0;
             -webkit-transform-origin: 0 0;
             margin-bottom: 10px;}
